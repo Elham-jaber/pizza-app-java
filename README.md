@@ -133,7 +133,20 @@ sont documentées avec Javadoc afin de faciliter la maintenance
 et la compréhension du code.
 
 ---
+## JavaFX
 
+Ce projet utilise **JavaFX** pour l’interface graphique.
+
+### Configuration
+- Java JDK 11 ou supérieur
+- JavaFX compatible avec la version du JDK
+
+### Lancement
+- Ouvrir le projet dans Eclipse
+- Ajouter JavaFX au Build Path
+- Lancer la classe `MainInterface`
+
+---
 ##  Bonnes pratiques & Checkstyle
 - Aucun System.out.println
 - Méthodes de taille raisonnable
