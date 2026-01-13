@@ -37,7 +37,7 @@ public final class MainInterface extends Application {
             stage.show();
 
         } catch (Exception e) {
-            e.printStackTrace(); // 🔴 IMPORTANT
+            e.printStackTrace(); // IMPORTANT
         }
     }
 
@@ -100,3 +100,4 @@ public final class MainInterface extends Application {
         launch(args);
     }
 }
+
