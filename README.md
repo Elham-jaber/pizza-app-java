@@ -39,29 +39,39 @@ Le projet met l’accent sur :
 - Les pizzas créées par le pizzaïolo sont visibles côté client
 - Les commandes validées par les clients apparaissent côté pizzaïolo
 
----
 
-##  Architecture — MVC
+## Architecture de l’application (MVC)
+
+L’application est développée selon le pattern **MVC (Model – View – Controller)** afin
+d’assurer une séparation claire des responsabilités et une meilleure maintenabilité.
 
 ###  Model (Logique métier)
-- Client
-- Pizza
-- Commande
-- GestionClient
-- GestionPizzaiolo
+Le package `pizzas` contient les classes métier de l’application, notamment :
+- la gestion des pizzas
+- les ingrédients
+- les commandes
+- les types et états métier
 
-###  View
-- client.fxml
-- pizzaiolo.fxml
+Ces classes encapsulent les règles métier et ne dépendent pas de l’interface graphique.
 
 ###  Controller
-- ClientControleur
-- PizzaioloControleur
+Le package `io` regroupe les classes responsables de la logique applicative et
+de la communication entre l’interface utilisateur et le modèle.
+Il inclut notamment la gestion des clients et du pizzaïolo.
 
-> JavaFX est utilisé pour la vue et les contrôleurs, tandis que la logique métier est
-gérée dans les classes dédiées.
+###  View
+Le package `ui` contient l’interface graphique développée avec **JavaFX** :
+- fichiers FXML
+- contrôleurs graphiques
+- gestion des événements utilisateurs
 
----
+###  Tests
+Le package `tests` regroupe les tests unitaires permettant de valider le
+bon fonctionnement des fonctionnalités principales.
+
+###  Point d’entrée
+La classe `MainPizzas` constitue le point d’entrée de l’application.
+Elle initialise les composants métier et lance l’interface JavaFX.
 
 ##  Rôle des classes principales
 
