@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Pizzaiolo implements InterPizzaiolo {
-
+// les fonctions de cette classe sont traitées dans la classe GestionPizzaiolo 
   @Override
   public int creerIngredient(String nom, double prix) {
     // TODO Auto-generated method stub
@@ -144,4 +144,5 @@ public class Pizzaiolo implements InterPizzaiolo {
     // TODO Auto-generated method stub
     return null;
   }
+
 }
