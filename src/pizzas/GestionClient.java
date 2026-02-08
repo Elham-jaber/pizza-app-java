@@ -96,7 +96,7 @@ public class GestionClient implements InterClient {
     @Override
     public int inscription(String email, String mdp, InformationPersonnelle info) {
 
-        // 1️ champs obligatoires
+        //  champs obligatoires
         if (info == null
                 || info.getNom() == null || info.getNom().isBlank()
                 || info.getPrenom() == null || info.getPrenom().isBlank()
@@ -106,7 +106,7 @@ public class GestionClient implements InterClient {
             return -1; // champs manquants
         }
 
-        // 2️ mot de passe
+        //  mot de passe
         if (mdp.length() < 8) {
             return -2; // mot de passe trop court
         }
@@ -438,3 +438,4 @@ public class GestionClient implements InterClient {
         return true;
     }
 }
+
