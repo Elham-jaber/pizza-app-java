@@ -119,18 +119,23 @@ Elle initialise les composants métier et lance l’interface JavaFX.
 
 ---
 
-## Qualité du code
-- Respect du pattern MVC
-- Respect des interfaces
-- Code lisible et structuré
-- Absence de bugs bloquants
+## Qualité du code et axes d’amélioration
 
----
+-Respect global du pattern MVC, avec une séparation claire des responsabilités
 
-##  Documentation — Javadoc
-Toutes les classes métiers, interfaces, méthodes publiques et exceptions
-sont documentées avec Javadoc afin de faciliter la maintenance
-et la compréhension du code.
+-Bonne utilisation des interfaces, favorisant la modularité et l’évolutivité du code
+
+-Code lisible, structuré et cohérent dans l’ensemble du projet
+
+-Absence de bugs bloquants identifiés lors de l’exécution et des tests fonctionnels
+
+## Axes d’amélioration identifiés :
+
+-Le code nécessite davantage de commentaires, notamment pour expliquer la logique métier et certaines parties complexes
+
+-La mise en place de tests unitaires est requise afin de garantir la fiabilité et la maintenabilité des fonctionnalités
+
+-L’outil Checkstyle n’est pas activé, ce qui empêche la vérification automatique du respect des conventions de codage et de la qualité du code
 
 ---
 ## JavaFX
