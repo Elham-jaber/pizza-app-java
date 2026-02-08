@@ -6,8 +6,7 @@ Application Java de gestion de commandes de pizzas
 ## Présentation
 Pizza App est une application Java développée avec JavaFX et basée sur l’architecture MVC.
 Elle permet la gestion complète d’un système de commandes de pizzas avec deux rôles :
-**Client** et **Pizzaïolo**.
-
+**Client** et **Pizzaïolo**. Ce projet a été réalisé dans un cadre universitaire et mené en travail de groupe, favorisant la collaboration en équipe ainsi que la prise en main et l’utilisation de Git pour la gestion de versions.
 Le projet met l’accent sur :
 - la logique métier
 - la qualité du code
